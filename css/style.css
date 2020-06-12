@@ -1,0 +1,433 @@
+/*-------------important fonts -------------*/
+@font-face{
+	src: url(../fonts/coves_light.otf);
+	font-family: "BrandonGrotesque light";
+}
+@font-face{
+	src: url(../fonts/neutra_text-Book.otf);
+	font-family: "BrandonGrotesque regular";
+}
+@font-face{
+	src: url(../fonts/transat_bold.ttf);
+	font-family: "BrandonGrotesque bold";
+}
+@font-face{
+	src: url(../fonts/transat_medium.ttf);
+	font-family: "BrandonGrotesque medium";
+}
+/*-------------important fonts end-------------*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: "BrandonGrotesque regular";
+	color: #777;
+}
+/*reusable style start*/
+h1,
+h2{
+	font-family: "BrandonGrotesque bold";
+}
+p{
+	font-size: 17px;
+}
+.common-title h2{
+	font-size: 50px;
+	color: #222;
+}
+.common-title .white{
+	color: #fff;
+}
+.common-title h2 span{
+	/*font-family: "BrandonGrotesque light";*/
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+.common-title p{
+	margin-top: 25px;
+}
+.common-title p.title-p{
+	margin-top: 0px;
+}
+.text-center{
+	text-align: center;
+}
+/*reusable style end*/
+/*difference container style start*/
+.container{
+	width: 69%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.container-2{
+	width: 63%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.wrapper{
+	overflow: hidden;
+}
+/*difference container style end*/
+/*-------header start from here--------------*/
+header{
+	background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../image/hero-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+header .logo{
+	float: left;
+	width: 12%;
+}
+header .logo a img{
+	width: 100%;
+	display: block;
+}
+header .menu{
+	width: 80%;
+	float: right;
+}
+header .menu ul{
+	float: right;
+}
+header .menu ul li{
+	list-style-type: none;
+	float: left;
+}
+header .menu ul li a{
+	font-family: "BrandonGrotesque medium";
+	font-size: 18px;
+	color: #fff;
+	text-decoration: none;
+	margin: 0px 15px;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 4px;
+	transition: .3s;
+	display: inline-block;
+}
+header .menu ul li:last-child a{
+	margin-right: 0px;
+}
+header .menu ul li a:hover{
+	border-bottom: 1px solid #fff;
+}
+/*header hero*/
+header .hero{
+	margin-top: 130px;
+	margin-bottom: 100px;
+	text-align: center;
+}
+header .hero p{
+	font-family: "BrandonGrotesque light";
+	font-size: 32px;
+	color: #fff;
+}
+header .hero h1 {
+    font-size: 66px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 37px;
+    margin-bottom: 62px;
+}
+header .hero .cta-btn{
+	font-family: "BrandonGrotesque bold";
+	font-size: 23px;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 4px;
+	background: none;
+	padding: 16px 65px;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: .3s;
+}
+header .hero .cta-btn:focus{
+	outline: none;
+}
+header .hero .cta-btn:hover{
+	background: rgba(255,255,255,0.2);
+}
+/*-------header end here--------------*/
+/*-------core service section start here--------------*/
+.core-service{
+	padding: 90px 0px;
+}
+.core-service.bottom{
+	background: #fafafa;
+}
+.core-service .core-serv-content{
+	float: left;
+	width: 71%;
+}
+
+.core-service.bottom .core-serv-content{
+	float: right;
+	width: 71%;
+}
+.core-service .core-serv-img{
+	float: right;
+	width: 22%;
+}
+.core-service.bottom .core-serv-img{
+	float: left;
+	width: 22%;
+}
+.core-service .core-serv-img img{
+	width: 100%;
+	display: block;
+	margin-top: 20px;
+}
+/*-------core service section end here--------------*/
+/*-------more service section start here--------------*/
+.service-section{
+	padding-top: 90px;
+	padding-bottom: 50px;
+}
+.service-section .serv-box{
+	width: 46%;
+	float: left;
+	margin-bottom: 40px;
+}
+.service-section .serv-box:nth-child(even){
+	float: right;
+}
+.service-section .serv-box .wrapper{}
+.service-section .serv-box .icon{
+	width: 19%;
+	float: left;
+}
+.service-section .serv-box .icon i{
+	font-size: 30px;
+	color: #fff;
+	width: 70px;
+	height: 70px;
+	background: #000;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 70px;
+}
+.service-section .serv-box .s-text{
+	width: 78%;
+	float: right;
+}
+.service-section .serv-box .s-text h4{
+	font-family: "BrandonGrotesque medium";
+	font-size: 22px;
+	color: #222; 
+}
+.service-section .serv-box .s-text p{
+	margin-top: 12px;
+}
+/*-------more service section end here--------------*/
+/*-------client section start here--------------*/
+.client-section{
+	padding: 90px 0px;
+	background: #fafafa;
+}
+.client-section .client-box{
+	width: 100%;
+	margin-top: 50px;
+}
+.client-section .client-box .profile{
+	width: 220px;
+	height: 220px;
+	background: #000;
+	float: left;
+	border-radius: 50%;
+	margin-left: 20px;
+}
+.client-section .client-box.cb-two .profile{
+	float: right;
+	margin-right: 20px;
+}
+.client-section .client-box .c-text{
+	width: 65%;
+	float: right;
+	background: #fff;
+	border: 1px solid #f2f2f2;
+	border-radius: 4px;
+	margin-top: 30px;
+	margin-right: 20px;
+	padding: 30px 60px 40px;
+	position: relative;
+	z-index: 99;
+}
+.client-section .client-box.cb-two .c-text{
+	float: left;
+	margin-left: 20px;
+}
+.triangle{
+	width: 24px;
+	height: 24px;
+	background: #fff;
+	border-bottom: 1px solid #f2f2f2;
+	border-left: 1px solid #f2f2f2;
+	position:  absolute;
+	top: 50%;
+	left: -13px;
+	transform: translateY(-50%) rotate(45deg);
+}
+.client-section .client-box.cb-two .triangle{
+	left: auto;
+	right: -13px;
+	border-top: 1px solid #f2f2f2;
+	border-right: 1px solid #f2f2f2;
+	border-bottom: 1px solid transparent;
+	border-left: 1px solid transparent;
+}
+.client-section .client-box .c-text p{
+	font-size: 23px;
+}
+.client-section .client-box .c-text .ab-client{
+	font-size: 19px;
+	color: #7690c5;
+	margin-top: 10px;
+	display: inline-block;
+}
+/*-------client section end here--------------*/
+/*-------partner-section start here--------------*/
+.partner-section{
+	padding: 60px 0px;
+}
+.partner-section .p-logo{
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+.partner-section .p-logo img{
+	height: 33px;
+}
+/*-------partner-section end here--------------*/
+/*-------team-section start here--------------*/
+.team-section{
+	padding: 90px 0px;
+	background: #111111;
+}
+.team-section .team-box{
+	color: #fff;
+	width: 28%;
+	margin-top: 65px;
+	float: left;
+}
+.team-section .team-box:nth-child(even){
+	margin-left: 8%;
+	margin-right: 8%;
+}
+.team-section .team-box .pic img{
+	width: 230px;
+	height: 230px;
+	border: 5px solid #fff;
+	border-radius: 50%;
+}
+.team-section .team-box p{
+	margin-top: 16px;
+}
+.team-section .team-box span{
+	margin-top: 6px;
+	margin-bottom: 6px;
+	display: inline-block;
+}
+.team-section .team-box .icon a{
+	margin: 5px 4px;
+	display: inline-block;
+}
+.team-section .team-box .icon a i{
+	font-size: 16px;
+	color: #fff;
+	width: 35px;
+	height: 35px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 35px;
+	transition: .3s;
+	transform: scale(1);
+}
+.team-section .team-box .icon a:hover i{
+	background: rgba(255,255,255,0.1);
+	transform: scale(1.1);
+}
+.team-section .team-f-text {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 45px;
+}
+.team-section .team-f-text p{
+	font-size: 20px;
+	color: #ebebeb;
+}
+/*-------team-section end here--------------*/
+/*-------contact-section start here--------------*/
+.contact-section{
+	padding: 90px 0px;
+	background: #7690c5;
+}
+.contact-section .info-box{
+	width: 49%;
+	float: left;
+}
+.contact-section .common-title p{
+	margin-top: 5px;
+}
+.contact-section .wrapper .info{
+	color: #fff;
+	margin-top: 35px;
+	float: left;
+	width: 45%;
+}
+.contact-section .wrapper .info:nth-child(even){
+	float: right;
+}
+.contact-section .wrapper .info li{
+	font-size: 18px;
+	display: inline-block;
+}
+.contact-section .wrapper .info li:first-child{
+	margin-right: 7px;
+}
+/*form start*/
+.contact-section .info-form{
+	width: 47%;
+	float: right;
+}
+.contact-section .info-form .name{
+	width: 100%;
+}
+.contact-section .info-form .name input{
+	margin-top: 0px;
+}
+.contact-section .info-form input,
+.contact-section .info-form textarea{
+	font-size: 18px;
+	color: #bbb;
+	width: 100%;
+	border: none;
+	border-radius: 2px;
+	padding: 15px;
+	background: #fff;
+	margin-top: 25px;
+}
+.contact-section .info-form input:focus,
+.contact-section .info-form textarea:focus{
+	outline: none;
+}
+/*-------contact-section end here--------------*/
+/*-------footer-section start here--------------*/
+footer{
+	background: #7690c5;
+}
+footer .container{
+	padding: 25px 0px;	
+	border-top: 1px solid #87a0d2;
+}
+footer .container p{
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+}
+/*-------footer-section end here--------------*/
