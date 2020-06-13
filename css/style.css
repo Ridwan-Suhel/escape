@@ -347,8 +347,19 @@ header .hero .cta-btn:hover{
 	transition: .3s;
 	transform: scale(1);
 }
-.team-section .team-box .icon a:hover i{
-	background: rgba(255,255,255,0.1);
+.team-section .team-box .icon a:first-child:hover i{
+	background: #00aced;
+	border: 2px solid #00aced;
+	transform: scale(1.1);
+}
+.team-section .team-box .icon a:nth-child(2):hover i{
+	background: #3b5998;
+	border: 2px solid #3b5998;
+	transform: scale(1.1);
+}
+.team-section .team-box .icon a:last-child:hover i{
+	background: #d95232;
+	border: 2px solid #d95232;
 	transform: scale(1.1);
 }
 .team-section .team-f-text {
